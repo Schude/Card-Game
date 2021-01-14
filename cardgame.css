@@ -1,0 +1,121 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --red: #cc3f35;
+    --border: 3px solid limegreen;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 36px;
+    font-family: cursive;
+    background-color: #242222;
+    color: whitesmoke;
+}
+
+.wrapper {
+    background-color: black;
+}
+
+.header {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.navbar {
+    flex-basis: 50%;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.navbar-item {
+    flex-basis: 25%;
+    text-align: center;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    padding: 0.7rem 0;
+    transition: color 0.7s, flex-basis 0.7s, background-color 0.7s, transform 1s, box-shadow 0.7s, letter-spacing 0.8s;
+}
+
+.navbar-item:hover {
+    cursor: pointer;
+    background-color: #d39a30;
+    flex-basis: 30%;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    color: black;
+    box-shadow: -0.8px -0.8px 2px #00000010, 10px 10px 10px rgba(0, 0, 0, 0.2), 30px 30px 30px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    flex-basis: 20%;
+}
+
+.logo img {
+    width: 50%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cards-container {
+    background-color: rgb(17, 14, 14);
+    margin: 0 auto;
+    margin: 5rem auto;
+    padding: 2px;
+    width: 49%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 230px);
+}
+
+.card {
+    background-color: #705116;
+    height: 180px;
+    width: 220px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.card p {
+    display: none;
+}
+
+.active {
+    background-color: #e7ba67;
+    cursor: default;
+}
+
+.active p {
+    display: inline;
+    position: relative;
+    top: 20px;
+    left: 75px;
+    font-size: 100px;
+}
+
+.matched {
+    background-color: #b2cf48;
+}
+
+.matched p {
+    display: inline;
+    position: relative;
+    font-size: 100px;
+    top: 20px;
+    left: 75px;
+}
